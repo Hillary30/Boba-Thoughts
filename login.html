@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="sstyle.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <title>Boba Rating App</title>
+    </head>
+    <body>
+        <!--Nav Bar-->
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo"><i class="fa-solid fa-mug-saucer"></i>Boba Thoughts</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/rating.html" class="navbar__links">My Ratings</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Bookmarks</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="/signUp.html" class="button">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!--Sign Up-->
+        <div class="signup__container">
+            <h1>Sign In!</h1>
+            <div class="panel-primary">
+                <div class="panel-heading">
+                </div>
+                <div class="panel-body">
+                    <form action="login.php" method="POST">
+                        <div class="form-group">
+                            <label for="userName">User Name:</label>
+                            <input type="text" class="form-control" id="userName" name="userName">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" class="form-control" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="text" class="form-control" id="password" name="password">
+                        </div>
+                        <input type="submit" class="btn" value="Login">
+                    </form>
+                </div>
+                <div class="panel-footer">
+                    <small>&copy; Boba Thoughts</small>
+                </div>
+                <div> 
+                    <a href="/signUp.html"><h3>Don't have an account?</h3></a>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/7786a14bb5.js" crossorigin="anonymous"></script>
+    </body>
+</html>
